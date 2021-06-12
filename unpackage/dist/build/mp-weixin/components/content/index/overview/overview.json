@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "arcbar-chart": "/components/common/stan-ucharts/ArcbarChart"
+  }
+}

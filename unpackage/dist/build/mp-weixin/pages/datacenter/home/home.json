@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100,
+  "usingComponents": {
+    "service": "/components/content/index/service/service",
+    "room-item": "/components/content/datacenter/room-item/room-item",
+    "back-top": "/components/common/back-top/back-top"
+  }
+}

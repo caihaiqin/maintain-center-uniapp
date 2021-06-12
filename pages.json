@@ -1,0 +1,210 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "综合运维",
+				"backgroundColor": "#1296db",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/task/task",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"backgroundColor": "#f0f4f5",
+				"h5": {
+					"titleNView": false
+				}
+
+			}
+
+		}, {
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/datacenter/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 100
+			}
+
+		}, {
+			"path": "pages/cloud/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/network/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 100
+
+			}
+
+		}, {
+			"path": "pages/service/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/network/month-polling/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/network/quarter-polling/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/datacenter/day-polling/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+
+				"backgroundColorBottom": "#FFFFFF"
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+
+			}
+
+		}, {
+			"path": "pages/profile/changepsw/changepsw",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/common/equipments-info/equipments-info",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+
+		}, {
+			"path": "components/content/equipments/add-equipment/add-equipment",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+		//#ifdef H5
+		,{
+			"path": "pages/h5/equipment-manage/equipment-manage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"h5": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/h5/report-manage/report-manage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"h5": {
+					"titleNView": false
+				}
+
+
+			}
+
+		}
+		//#endif
+		
+	    ,{
+            "path" : "pages/h5/equipment-weekly-polling-report/equipment-weekly-polling-report",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+								"h5": {
+									"titleNView": false
+								}
+            }
+            
+        }
+        ,{
+            "path" : "pages/profile/changephone/changephone",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "综合运维",
+		"navigationBarBackgroundColor": "#1296db",
+		"backgroundColor": "#1296db",
+		"enablePullDownRefresh": false
+	},
+	"tabBar": {
+		"iconWidth": "10px",
+		"selectedColor": "#1296db",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "运维中心",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index_selected.png"
+			}
+			//#ifndef H5
+			,{
+				"pagePath": "pages/task/task",
+				"text": "报表",
+				"iconPath": "static/icon/task.png",
+				"selectedIconPath": "static/icon/task_selected.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/icon/profile.png",
+				"selectedIconPath": "static/icon/profile_selected.png"
+			}
+			//#endif
+		]
+
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

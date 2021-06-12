@@ -1,0 +1,34 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"room_name": {
+			"bsonType": "string"
+		},
+		"group": {
+			"bsonType": "int"
+		},
+		"location": {
+			"bsonType": "string",
+			"title": "地点",
+			"description": "地点",
+			"trim": "both"
+		},
+		"address": {
+			"bsonType": "string",
+			"title": "详细地址",
+			"description": "详细地址",
+			"trim": "both"
+		}
+		
+	}
+}

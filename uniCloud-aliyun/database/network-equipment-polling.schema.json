@@ -1,0 +1,225 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"serial_number": {
+			"bsonType": "string",
+			"title": "序列号",
+			"description": "设备序列号",
+			"foreignKey": "equipments.serial_number"
+		},
+		"type": {
+			"bsonType": "string",
+			"title": "设备类型",
+			"description": "设备类型",
+			"trim": "both"
+		},
+		"indicator_light": {
+			"bsonType": "int",
+			"title": "面板指示灯",
+			"description": "面板指示灯，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"power_status": {
+			"bsonType": "int",
+			"title": "电源状态",
+			"description": "电源状态，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"fan_status": {
+			"bsonType": "int",
+			"title": "风扇状态",
+			"description": "风扇状态，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"board_status": {
+			"bsonType": "int",
+			"title": "板卡状态",
+			"description": "板卡状态，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"ports_status": {
+			"bsonType": "int",
+			"title": "端口状态",
+			"description": "端口状态，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"hard_disk_status": {
+			"bsonType": "int",
+			"title": "硬盘状态",
+			"description": "硬盘状态，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"log_status": {
+			"bsonType": "int",
+			"title": "日志状态",
+			"description": "日志状态，0-绿色正常，1-黄色告警，2-红色故障",
+			"trim": "both",
+			"defaultValue": 0,
+			"enum": [{
+				"text": "正常",
+				"value": 0
+			}, {
+				"text": "告警",
+				"value": 1
+			}, {
+				"text": "故障",
+				"value": 2
+			}]
+		},
+		"alarm": {
+			"bsonType": "int",
+			"title": "告警",
+			"description": "告警",
+			"trim": "both",
+			"defaultValue": 0
+		},
+		"fault": {
+			"bsonType": "int",
+			"title": "故障",
+			"description": "故障",
+			"trim": "both",
+			"defaultValue": 0
+		},
+		"cpu": {
+			"bsonType": "int",
+			"title": "CPU利用率",
+			"description": "CPU利用率",
+			"trim": "both",
+			"defaultValue": 30
+		},
+		"memory": {
+			"bsonType": "int",
+			"title": "内存利用率",
+			"description": "内存利用率",
+			"trim": "both",
+			"defaultValue": 10
+			},
+		"temperature": {
+				"bsonType": "int",
+				"title": "温度",
+				"description": "温度",
+				"trim": "both",
+				"defaultValue": 35
+		},
+		"totality": {
+				"bsonType": "string",
+				"title": "总体状态",
+				"description": "总体状态",
+				"trim": "both",
+				"defaultValue": "正常"
+		},
+		"polling_img": {
+				"bsonType": "array",
+				"title": "巡检照片",
+				"description": "巡检照片"
+		},
+		
+		"polling_date": {
+				"bsonType": "string",
+				"title": "巡检日期",
+				"description": "巡检日期",
+				"trim": "both"
+				
+		},
+		"polling_date_timestamp": {
+				"bsonType": "timestamp",
+				"title": "巡检日期",
+				"description": "巡检日期",
+				"trim": "both"
+				
+		},
+		"polling_enginner": {
+				"bsonType": "string",
+				"title": "巡检工程师",
+				"description": "巡检工程师",
+				"trim": "both"
+				
+		},
+		"abnormal_detail":{
+			"bsonType": "string",
+			"title": "异常详情",
+			"description": "异常详情",
+			"trim": "both"
+		}
+			
+				
+			
+		
+	}
+}

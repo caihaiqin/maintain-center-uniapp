@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-badge": "/components/common/uni-badge/uni-badge",
+    "uni-popup": "/components/common/uni-popup/uni-popup"
+  }
+}

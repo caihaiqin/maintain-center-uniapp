@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "overview": "/components/content/index/overview/overview"
+  }
+}

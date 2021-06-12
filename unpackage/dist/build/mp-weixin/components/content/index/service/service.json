@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "service-item": "/components/content/index/service/service-item"
+  }
+}

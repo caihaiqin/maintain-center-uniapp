@@ -1,0 +1,1 @@
+<view class="content uni-flex data-v-9525fc44"><block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="id"><block class="data-v-9525fc44"><view class="analytics-item data-v-9525fc44"><analytics-item vue-id="{{'7b528a27-1-'+index}}" info="{{analyticsInfo[item]}}" class="data-v-9525fc44" bind:__l="__l"></analytics-item></view></block></block></view>

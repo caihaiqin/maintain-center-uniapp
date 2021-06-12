@@ -1,0 +1,136 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"department": {
+			"bsonType": "string",
+			"title": "部门",
+			"description": "设备所属部门",
+			"trim": "both"
+		},
+		"system": {
+			"bsonType": "string",
+			"title": "所属系统",
+			"description": "设备所属系统",
+			"trim": "both"
+		},
+		"maintenance": {
+			"bsonType": "string",
+			"title": "维保",
+			"description": "设备维保情况",
+			"trim": "both"
+		},
+		"machine_room": {
+			"bsonType": "string",
+			"title": "机房",
+			"description": "设备所在机房",
+			"trim": "both"
+		},
+		"address": {
+			"bsonType": "string",
+			"title":"机房地址",
+			"description": "机房地址",
+			"trim": "both"
+		},
+		"cabinet": {
+			"bsonType": "string",
+			"title": "机柜",
+			"description": "设备所在机柜",
+			"trim": "both"
+		},
+		"name": {
+			"bsonType": "string",
+			"title": "设备名称",
+			"description": "设备名称",
+			"trim": "both"
+		},
+		"model": {
+			"bsonType": "string",
+			"title": "设备型号",
+			"description": "设备型号",
+			"trim": "both"
+		},
+		"type": {
+			"bsonType": "string",
+			"title": "设备类型",
+			"description": "设备类型",
+			"trim": "both"
+		},
+		"producer": {
+			"bsonType": "string",
+			"title": "生产商",
+			"description": "生产商",
+			"trim": "both"
+		},
+		"serial_number": {
+			"bsonType": "string",
+			"title": "序列号",
+			"description": "序列号",
+			"trim": "both"
+		},
+		"versions": {
+			"bsonType": "string",
+			"title": "软件版本",
+			"description": "软件版本",
+			"trim": "both"
+		},
+		"manage_ip": {
+			"bsonType": "string",
+			"title": "管理IP",
+			"description": "管理IP",
+			"trim": "both"
+		},
+		"heap_number": {
+			"bsonType": "int",
+			"title": "堆叠数量",
+			"description": "堆叠数量",
+			"trim": "both"
+		},
+		"grade": {
+			"bsonType": "string",
+			"title": "设备等级",
+			"description": "设备等级",
+			"trim": "both"
+		},
+		"form": {
+			"bsonType": "string",
+			"title": "网络结构",
+			"description": "网络结构",
+			"trim": "both"
+		},
+		"remarks": {
+			"bsonType": "string",
+			"title": "备注",
+			"description": "备注",
+			"trim": "both"
+		},
+		"power_supply": {
+			"bsonType": "string",
+			"title": "电源",
+			"description": "电源",
+			"trim": "both"
+		},
+		"totality": {
+				"bsonType": "string",
+				"title": "总体状态",
+				"description": "总体状态",
+				"trim": "both",
+				"defaultValue": "正常"
+		},
+		"abnormal_detail":{
+			"bsonType": "string",
+			"title": "异常详情",
+			"description": "异常详情",
+			"trim": "both"
+		}
+	}
+}

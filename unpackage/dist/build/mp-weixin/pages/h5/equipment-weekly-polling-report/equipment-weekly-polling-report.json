@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "h5-header": "/components/common/h5-header/h5-header"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="content data-v-6fe63831"><view class="img data-v-6fe63831"><view class="icon iconfont icon-luyouqi router data-v-6fe63831"></view></view><view class="info data-v-6fe63831"><text class="data-v-6fe63831">{{info.type}}</text></view></view>

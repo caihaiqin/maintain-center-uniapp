@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "analytics-item": "/components/common/analytics-item/analytics-item"
+  }
+}

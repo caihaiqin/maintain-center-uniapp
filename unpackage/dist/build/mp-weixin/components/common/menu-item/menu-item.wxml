@@ -1,0 +1,1 @@
+<view class="content uni-flex uni-column flex-center data-v-12f428fe"><view class="image data-v-12f428fe"><image class="img data-v-12f428fe" src="{{menuInfo.img}}" mode="scaleToFill"></image></view><view class="font-size-22 data-v-12f428fe"><text class="data-v-12f428fe">{{menuInfo.name}}</text></view></view>

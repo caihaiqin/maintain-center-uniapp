@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "backgroundColorBottom": "#FFFFFF",
+  "usingComponents": {
+    "image-upload": "/components/common/image-upload/image-upload",
+    "polling-item": "/components/common/polling-item/polling-item",
+    "uni-combox": "/components/common/uni-combox/uni-combox",
+    "uni-number-box": "/components/common/uni-number-box/uni-number-box"
+  }
+}

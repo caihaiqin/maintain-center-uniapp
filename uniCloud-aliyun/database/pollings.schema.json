@@ -1,0 +1,111 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"id": {
+			"bsonType": "int"
+		},
+		"polling_date": {
+			"bsonType": "string"
+		},
+		"duty_enginner": {
+			"bsonType": "string"
+		},
+		"card": {
+			"bsonType": "string"
+		},
+		"interphone": {
+			"bsonType": "string"
+		},
+		"phone": {
+			"bsonType": "string"
+		},
+		"flashlight": {
+			"bsonType": "string"
+		},
+		"hand_over_enginner": {
+			"bsonType": "string"
+
+		},
+		"take_over_enginner": {
+			"bsonType": "string"
+		},
+		"take_over_time": {
+			"bsonType": "string"
+		},
+		"machinery_room": {
+			"bsonType": "string"
+		},
+		"polling_time": {
+			"bsonType": "string"
+		},
+		"room_temperature": {
+			"bsonType": "string"
+		},
+
+		"room_humidness": {
+			"bsonType": "string"
+		},
+		"precision_temperature": {
+			"bsonType": "string"
+		},
+		"precision_humidness": {
+			"bsonType": "string"
+		},
+
+		"fire_system": {
+			"bsonType": "string"
+		},
+		"access_system": {
+			"bsonType": "string"
+		},
+
+		"ups_system": {
+			"bsonType": "string"
+		},
+		"ab_line": {
+			"bsonType": "string"
+		},
+		"bc_line": {
+			"bsonType": "string"
+		},
+
+		"ca_line": {
+			"bsonType": "string"
+		},
+
+		"gas": {
+			"bsonType": "string"
+		},
+
+
+		"conclusion": {
+			"bsonType": "string"
+		},
+		"createAt": {
+			"bsonType": "timestamp"
+		},
+		"updateAt": {
+			"bsonType": "timestamp"
+		},
+
+		"fileIDs": {
+			"bsonType": "array",
+			"defaultValue": "[]"
+		},
+		"fileBase64": {
+			"bsonType": "array",
+			"defaultValue": "[]"
+		}
+	}
+}

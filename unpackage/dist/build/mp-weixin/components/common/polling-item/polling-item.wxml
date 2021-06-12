@@ -1,0 +1,1 @@
+<view class="polling-item-content data-v-4c33dc45"><uni-card vue-id="2e41b260-1" title="{{title}}" thumbnail="{{thumbnail}}" extra="{{extra}}" note="{{note}}" class="data-v-4c33dc45" bind:__l="__l" vue-slots="{{['default']}}"><slot></slot></uni-card></view>

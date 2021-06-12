@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "equipment-polling-info-card": "/components/common/equipment-polling-info-card/equipment-polling-info-card"
+  }
+}

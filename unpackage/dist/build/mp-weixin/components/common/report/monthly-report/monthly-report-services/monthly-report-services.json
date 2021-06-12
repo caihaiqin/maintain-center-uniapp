@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-ec-canvas": "/components/common/uni-ec-canvas/uni-ec-canvas"
+  }
+}

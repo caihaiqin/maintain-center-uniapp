@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/task/task",
+    "pages/profile/profile",
+    "pages/datacenter/home/home",
+    "pages/cloud/home/home",
+    "pages/network/home/home",
+    "pages/service/home/home",
+    "pages/network/month-polling/home/home",
+    "pages/network/quarter-polling/home/home",
+    "pages/datacenter/day-polling/home/home",
+    "pages/login/login",
+    "pages/profile/changepsw/changepsw",
+    "pages/common/equipments-info/equipments-info",
+    "components/content/equipments/add-equipment/add-equipment",
+    "pages/h5/equipment-weekly-polling-report/equipment-weekly-polling-report",
+    "pages/profile/changephone/changephone"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "综合运维",
+    "navigationBarBackgroundColor": "#1296db",
+    "backgroundColor": "#1296db",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "iconWidth": "10px",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "运维中心",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/index_selected.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "报表",
+        "iconPath": "static/icon/task.png",
+        "selectedIconPath": "static/icon/task_selected.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/icon/profile.png",
+        "selectedIconPath": "static/icon/profile_selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的位置"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

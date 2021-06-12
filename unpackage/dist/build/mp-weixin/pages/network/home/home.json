@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100,
+  "usingComponents": {
+    "service": "/components/content/index/service/service",
+    "equipment-polling-info-list": "/components/content/equipments/equipment-polling-info-list/equipment-polling-info-list",
+    "back-top": "/components/common/back-top/back-top"
+  }
+}

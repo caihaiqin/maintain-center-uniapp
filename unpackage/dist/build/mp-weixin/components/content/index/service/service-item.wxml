@@ -1,0 +1,1 @@
+<view class="content"><view class="item"><view class="img"><image class="image" src="{{serviceImg}}" mode></image></view><view class="text"><view class="font-size-22">{{serviceName}}</view></view></view></view>

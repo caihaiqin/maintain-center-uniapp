@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "综合运维",
+  "backgroundColor": "#1296db",
+  "usingComponents": {
+    "service": "/components/content/index/service/service",
+    "team": "/components/content/index/team/team",
+    "overview": "/components/content/index/overview/overview",
+    "analytics": "/components/content/index/analytics/analytics",
+    "menu-item": "/components/common/menu-item/menu-item",
+    "h5-header": "/components/common/h5-header/h5-header"
+  }
+}

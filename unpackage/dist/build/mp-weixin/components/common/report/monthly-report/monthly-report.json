@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-transition": "/components/common/uni-transition/uni-transition",
+    "monthly-report-target": "/components/common/report/monthly-report/monthly-report-target/monthly-report-target",
+    "monthly-report-services": "/components/common/report/monthly-report/monthly-report-services/monthly-report-services",
+    "monthly-report-maintenance": "/components/common/report/monthly-report/monthly-report-maintenance/monthly-report-maintenance",
+    "monthly-report-special": "/components/common/report/monthly-report/monthly-report-special/monthly-report-special"
+  }
+}

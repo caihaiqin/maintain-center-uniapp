@@ -1,0 +1,1 @@
+<view><h5-header vue-id="6df2a870-1" bind:__l="__l"></h5-header><web-view style="width:100%;margin-top:60px;" src="{{pdfUrl}}"></web-view></view>
