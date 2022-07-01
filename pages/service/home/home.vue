@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="content">
-			服务台主页
+			功能待定
 		</view>
 	</view>
 </template>

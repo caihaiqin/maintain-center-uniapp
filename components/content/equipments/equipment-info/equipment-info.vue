@@ -24,7 +24,7 @@
 			<view class="operation-item-left" @click="pollingClick">
 				<text >巡检</text>
 			</view>
-			<view class="operation-item-right">
+			<view class="operation-item-right" @click="maintainClick">
 				<text>维护</text>
 			</view>
 		</view>
@@ -62,6 +62,9 @@
 		pollingClick(){
 			
 			this.$emit('pollingClick')
+		},
+		maintainClick(){
+			this.$emit('maintainClick')
 		},
 		markertapClick(e){
 			console.log(e)

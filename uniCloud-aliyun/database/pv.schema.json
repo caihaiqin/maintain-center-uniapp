@@ -1,0 +1,66 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		}
+	},
+	"breadcrumbs": {
+		"bsonType": "Array"
+	},
+	"contexts": {
+		"bsonType": "Object"
+	},
+	"environment": {
+		"bsonType": "String"
+	},
+	"event_id": {
+		"bsonType": "String"
+	},
+	"extra": {
+		"bsonType": "Object"
+	},
+	"level": {
+		"bsonType": "String"
+	},
+	"group": {
+		"bsonType": "int"
+	},
+	"message": {
+		"bsonType": "String"
+	},
+	"platform": {
+			"bsonType": "String"
+		},
+		"release": {
+			"bsonType": "String"
+		},
+		"sdk": {
+			"bsonType": "Object"
+		},
+		"stacktrace": {
+			"bsonType": "Object"
+		},
+		"tags": {
+			"bsonType": "Object"
+		},
+		"user": {
+			"bsonType": "Object"
+		},
+		"request": {
+			"bsonType": "Object"
+		},
+		"timestamp": {
+			"bsonType": "String"
+		},
+		"source": {
+			"bsonType": "String"
+		}
+}

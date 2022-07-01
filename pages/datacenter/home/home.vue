@@ -77,8 +77,8 @@
 		
 			getPollingInfo(this.page).then(res=>{
 				
-				this.pollingInfo = this.pollingInfo.concat(res.result.data)
-				console.log(this.pollingInfo)
+				this.pollingInfo =  res.result.data
+				console.log('机房mounted',this.pollingInfo)
 				// console.log(dateFormat(new Date(res.data[0].polling_data),"YYYY-mm-dd"))
 			}).catch(err=>{
 				console.log(err)
@@ -89,7 +89,7 @@
 			//为了提交巡检后重新进入页面重新获取最新数据
 			getPollingInfo(0).then(res=>{
 				this.pollingInfo = res.result.data
-				console.log(this.pollingInfo)
+				console.log('机房show',this.pollingInfo)
 				
 				
 			}).catch(err=>{

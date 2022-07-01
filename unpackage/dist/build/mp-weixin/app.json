@@ -15,7 +15,8 @@
     "pages/common/equipments-info/equipments-info",
     "components/content/equipments/add-equipment/add-equipment",
     "pages/h5/equipment-weekly-polling-report/equipment-weekly-polling-report",
-    "pages/profile/changephone/changephone"
+    "pages/profile/changephone/changephone",
+    "pages/404/404"
   ],
   "subPackages": [],
   "window": {

@@ -165,6 +165,19 @@
             }
             
         }
+        ,{
+            "path" : "pages/404/404",
+                                                                                               
+            "style": {
+            	"navigationBarTitleText": "",
+            	"enablePullDownRefresh": false,
+            	"h5": {
+            		"titleNView": false
+            	}
+							},
+						"name":"404"
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

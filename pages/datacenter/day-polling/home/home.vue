@@ -524,7 +524,7 @@
 			getPollingInfoByArea(this.currentRoomName).then(res=>{
 				// 获取最近一次巡检信息
 				console.log(res)
-				this.pollingInfo = res.result.data[res.result.data.length-1]
+				this.pollingInfo = res.result.data.length > 0? res.result.data[res.result.data.length-1]:{}
 				console.log(this.pollingInfo)
 				
 			}).catch(err=>{

@@ -1,2 +1,2 @@
 .content.data-v-6b5d17a8{background-color:rgba(76,78,117,.5);padding:30rpx;border-radius:20rpx}.content view.data-v-6b5d17a8{line-height:1.2}.content .line.data-v-6b5d17a8{padding:0 0 30rpx 0}.content .line.data-v-6b5d17a8,
-.content .icon.data-v-6b5d17a8{-webkit-box-flex:1;-webkit-flex:1;flex:1}.content .info.data-v-6b5d17a8{-webkit-box-flex:2;-webkit-flex:2;flex:2}.content .icon.data-v-6b5d17a8{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;flex-direction:row-reverse}
+.content .icon.data-v-6b5d17a8{flex:1}.content .info.data-v-6b5d17a8{flex:2}.content .icon.data-v-6b5d17a8{flex-direction:row-reverse}

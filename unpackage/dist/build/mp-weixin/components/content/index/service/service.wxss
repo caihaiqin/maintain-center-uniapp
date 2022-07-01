@@ -1,1 +1,1 @@
-.main.data-v-00e4582a{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-justify-content:space-around;justify-content:space-around;background-color:#fff;border-radius:20rpx;-webkit-flex-wrap:wrap;flex-wrap:wrap;padding:20rpx 0}.main .service-item.data-v-00e4582a{height:120rpx}
+.main.data-v-00e4582a{display:flex;justify-content:space-around;background-color:#fff;border-radius:20rpx;flex-wrap:wrap;padding:20rpx 0}.main .service-item.data-v-00e4582a{height:120rpx}

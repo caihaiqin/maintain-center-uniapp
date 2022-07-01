@@ -11,9 +11,9 @@
 					</view>
 				</block>
 			</view>
-			<button @click="throwError">
+		<!-- 	<button @click="throwError">
 				Throw error
-			</button>
+			</button> -->
 		</view>
 		<!-- #endif -->
 		<!-- //H5页面  用于后台管理 -->
@@ -33,9 +33,9 @@
 				<text class="scanText">扫一扫巡检</text>
 			</view>
 		</view>
-		<button @click="throwError">
+		<!-- <button @click="throwError">
 			Throw error
-		</button>
+		</button> -->
 		<!-- #endif -->
 
 	</view>

@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="content">
-			<text>cloud</text>
+			<text>功能待定</text>
 		</view>
 	</view>
 </template>

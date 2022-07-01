@@ -1,1 +1,1 @@
-.arcbar.data-v-a2973bae{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;justify-content:space-evenly}.arcbar .arcbar-chart-item.data-v-a2973bae{-webkit-box-flex:1;-webkit-flex:1;flex:1}.arcbar .arcbar-chart-item .title.data-v-a2973bae{font-size:24rpx}
+.arcbar.data-v-a2973bae{display:flex;justify-content:space-evenly}.arcbar .arcbar-chart-item.data-v-a2973bae{flex:1}.arcbar .arcbar-chart-item .title.data-v-a2973bae{font-size:24rpx}

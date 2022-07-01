@@ -10,7 +10,7 @@ const getNetEqPollingList =(page)=>{
 	return collection
 		.skip(10*page) // 跳过前page*10条
 		.limit(10) // 获取10条
-		.orderBy('_id','desc')
+		.orderBy('polling_date','desc')
 		.get()
 }
 const getEquipmentAndPollingList=(department,beginDate,endDate)=>{

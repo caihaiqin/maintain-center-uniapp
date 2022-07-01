@@ -34,7 +34,7 @@ const option1 = {
 	xAxis: [{
 		type: "category",
 		boundaryGap: false,
-		data: ["11月", "12月", "1月", "2月"]
+		data: ["3月", "4月", "5月", "6月"]
 	}],
 	yAxis: [{
 		type: "value"

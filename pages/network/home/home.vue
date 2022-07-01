@@ -1,9 +1,9 @@
 <template>
 	<view>
 		<view class="content">
-			<view class="task-type">
+<!-- 			<view class="task-type">
 				<service :serviceInfo="serviceInfo"></service>
-			</view>
+			</view> -->
 			<view class="list">
 				
 				<equipment-polling-info-list :equipmentPollingInfoList='equipmentPollingInfoList'></equipment-polling-info-list>

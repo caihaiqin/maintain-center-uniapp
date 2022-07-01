@@ -8,6 +8,7 @@
 			<!-- 展示设备信息组件 -->
 			<equipment-info 
 			@pollingClick="pollingClick"
+			@maintainClick="maintainClick"
 			v-show="showControl.equipmentInfo"
 			:equipmentInfo="equipmentInfo" 
 			:fields="fields"
@@ -28,6 +29,13 @@
 			@pollingSubmit="pollingSubmit"
 			@pollingBackClick="pollingBackClick"
 			/>
+			
+			<!-- 设备维护模块 -->
+			<equipment-maintain 
+			v-show="showControl.equipmentMaintain"
+			@maintainBackClick = "maintainBackClick"
+			@maintainSubmit="maintainSubmit"
+			/>
 		</view>
 		
 	
@@ -38,7 +46,7 @@
 	import EquipmentInfo from "components/content/equipments/equipment-info/equipment-info.vue"
 	import EquipmentPolling from "components/content/equipments/equipment-polling/equipment-polling.vue"
 	import AddEquipment from "components/content/equipments/add-equipment/add-equipment.vue"
-	
+	import EquipmentMaintain from "components/content/equipments/equipment-maintain/equipment-maintain.vue"
 	// 导入百度地图api
 	import BMap from "utils/bmap-wx.js"
 	//导入腾讯地图api
@@ -56,8 +64,9 @@
 				equipmentInfo:[],
 				showControl:{
 					equipmentPolling:false,
-					equipmentInfo:true,
-					addEquipment:false
+					equipmentInfo:false,
+					addEquipment:false,
+					equipmentMaintain:true
 				},
 				//百度地址解析相关  保存经度纬度
 				
@@ -90,7 +99,7 @@
 				]
 			}
 		},
-		components:{EquipmentInfo,EquipmentPolling,AddEquipment},
+		components:{EquipmentInfo,EquipmentPolling,AddEquipment,EquipmentMaintain},
 		methods: {
 			// 监听添加设备添加按钮点击
 				
@@ -138,7 +147,25 @@
 				this.showControl[type]=false
 				this.showControl.equipmentInfo = true
 			},
-			
+			//维护也点击返回
+	
+			maintainBackClick(type){
+				console.log("维护返回")
+				this.showControl[type]=false
+				this.showControl.equipmentInfo = true
+			},
+			//监听维护页面提交按钮点击
+			maintainSubmit(){
+					
+			},
+			//维护按钮点击
+			maintainClick(){
+				console.log("点击维护")
+				this.showControl.equipmentMaintain = true
+				this.showControl.equipmentInfo = false
+				
+			},
+			//巡检按钮点击
 			pollingClick(){
 				console.log("点击巡检","设备类型",this.equipmentInfo[0].type)
 				//  创建百度地图接口对象

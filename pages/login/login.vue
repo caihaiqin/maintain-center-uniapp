@@ -158,45 +158,45 @@
 				this.expiresIn = new Date().getTime()+1000*60
 				console.log('发送验证码',this.sendCode)
 				
-				 // uniCloud.callFunction({
-					//  name: 'sendSms',
-					//  data: {
+			// 	 uniCloud.callFunction({
+			// 		 name: 'sendSms',
+			// 		 data: {
 					 	
-					//  	params: {
-					//  		phone: this.phonenum,
-					//  		code:this.sendCode
-					//  	}
-					//  },
-					//  success:(res)=>{
-					//  	console.log(res)
-					// 	if(res.result.errCode ==0){
-					// 		//调用成功 设置过期时间 倒计时
-					// 		uni.showToast({
-					// 			title:"验证码已发送",
-					// 			icon:"none"
-					// 		})
-					// 		this.expiresIn = new Date().getTime()+1000*60
-					// 		console.log(this.expiresIn)
-					// 		this.setCountDown()
-					// 	}else{
-					// 		uni.showToast({
-					// 			title:"验证码发送失败，请重试",
-					// 			icon:"none"
-					// 		})
-					// 		this.isGetCodeDisable = false
-					// 	}
+			// 		 	params: {
+			// 		 		phone: this.phonenum,
+			// 		 		code:this.sendCode
+			// 		 	}
+			// 		 },
+			// 		 success:(res)=>{
+			// 		 	console.log(res)
+			// 			if(res.result.errCode ==0){
+			// 				//调用成功 设置过期时间 倒计时
+			// 				uni.showToast({
+			// 					title:"验证码已发送",
+			// 					icon:"none"
+			// 				})
+			// 				this.expiresIn = new Date().getTime()+1000*60
+			// 				console.log(this.expiresIn)
+			// 				this.setCountDown()
+			// 			}else{
+			// 				uni.showToast({
+			// 					title:"验证码发送失败，请重试",
+			// 					icon:"none"
+			// 				})
+			// 				this.isGetCodeDisable = false
+			// 			}
 								
-					//  },
-					//  fail:function(err){
-					//  	console.log(err)
-					// 	uni.showToast({
-					// 		title:"验证码发送失败，请重试",
-					// 		icon:"none"
-					// 	})
-					// 	this.isGetCodeDisable = false
-					//  }
+			// 		 },
+			// 		 fail:function(err){
+			// 		 	console.log(err)
+			// 			uni.showToast({
+			// 				title:"验证码发送失败，请重试",
+			// 				icon:"none"
+			// 			})
+			// 			this.isGetCodeDisable = false
+			// 		 }
 					 
-				 // }) 
+			// 	 }) 
 			},
 			// 验证短信验证码
 			verityCode:function(){

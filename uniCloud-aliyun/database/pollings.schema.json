@@ -92,20 +92,21 @@
 		"conclusion": {
 			"bsonType": "string"
 		},
+		"abnormal_detail": {
+			"bsonType": "string"
+		},
 		"createAt": {
 			"bsonType": "timestamp"
 		},
 		"updateAt": {
 			"bsonType": "timestamp"
 		},
-
-		"fileIDs": {
-			"bsonType": "array",
-			"defaultValue": "[]"
+		"fileBase": {
+			"bsonType": "array"
 		},
-		"fileBase64": {
-			"bsonType": "array",
-			"defaultValue": "[]"
+		
+		"fileIDs": {
+			"bsonType": "array"
 		}
 	}
 }
