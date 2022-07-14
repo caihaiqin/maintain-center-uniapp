@@ -37,30 +37,30 @@
 		"bsonType": "String"
 	},
 	"platform": {
-			"bsonType": "String"
-		},
-		"release": {
-			"bsonType": "String"
-		},
-		"sdk": {
-			"bsonType": "Object"
-		},
-		"stacktrace": {
-			"bsonType": "Object"
-		},
-		"tags": {
-			"bsonType": "Object"
-		},
-		"user": {
-			"bsonType": "Object"
-		},
-		"request": {
-			"bsonType": "Object"
-		},
-		"timestamp": {
-			"bsonType": "String"
-		},
-		"source": {
-			"bsonType": "String"
-		}
+		"bsonType": "String"
+	},
+	"release": {
+		"bsonType": "String"
+	},
+	"sdk": {
+		"bsonType": "Object"
+	},
+	"stacktrace": {
+		"bsonType": "Object"
+	},
+	"tags": {
+		"bsonType": "Object"
+	},
+	"user": {
+		"bsonType": "Object"
+	},
+	"request": {
+		"bsonType": "Object"
+	},
+	"timestamp": {
+		"bsonType": "String"
+	},
+	"source": {
+		"bsonType": "String"
+	}
 }

@@ -1,5 +1,5 @@
 // 设置机房位置方圆半径
-export const LOCATION_RADIUS =50000
+export const LOCATION_RADIUS =300
 export const ANALYTICS_LINE_COLOR = ["#5c8cd8","#5c9f70","#e9a943","#a42516","#d155b4","#ffffff","#323864"]
 export const PAGE_SIZE =15
 export const SMS_CONFIG = {

@@ -104,7 +104,7 @@
 		"fileBase": {
 			"bsonType": "array"
 		},
-		
+
 		"fileIDs": {
 			"bsonType": "array"
 		}

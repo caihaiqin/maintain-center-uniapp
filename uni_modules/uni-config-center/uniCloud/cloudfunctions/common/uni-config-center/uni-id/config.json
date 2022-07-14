@@ -4,7 +4,6 @@
 	"tokenExpiresIn": 7200,
 	"tokenExpiresThreshold": 600,
 	"passwordErrorLimit": 6,
-	"bindTokenToDevice": true,
 	"passwordErrorRetryTime": 3600,
 	"autoSetInviteCode": false,
 	"forceInviteCode": false,
@@ -17,7 +16,11 @@
 			},
 			"apple":	{
 				"bundleId": "your APP bundleId"
-			}
+			},
+      "qq": {
+        "appid": "qq appid",
+        "appsecret": "qq app key"
+      }
 		}
 	},
 	"mp-weixin": {
@@ -36,6 +39,14 @@
 			}
 		}
 	},
+  "mp-qq": {
+    "oauth": {
+      "qq": {
+        "appid" : "mp qq appid",
+        "appsecret" : "mp qq appsecret"
+      }
+    }
+  },
 	"service": {
 		"sms": {
 			"name": "DCloud",

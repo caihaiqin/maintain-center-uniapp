@@ -169,57 +169,49 @@
 			"description": "内存利用率",
 			"trim": "both",
 			"defaultValue": 10
-			},
+		},
 		"temperature": {
-				"bsonType": "int",
-				"title": "温度",
-				"description": "温度",
-				"trim": "both",
-				"defaultValue": 35
+			"bsonType": "int",
+			"title": "温度",
+			"description": "温度",
+			"trim": "both",
+			"defaultValue": 35
 		},
 		"totality": {
-				"bsonType": "string",
-				"title": "总体状态",
-				"description": "总体状态",
-				"trim": "both",
-				"defaultValue": "正常"
+			"bsonType": "string",
+			"title": "总体状态",
+			"description": "总体状态",
+			"trim": "both",
+			"defaultValue": "正常"
 		},
 		"polling_img": {
-				"bsonType": "array",
-				"title": "巡检照片",
-				"description": "巡检照片"
+			"bsonType": "array",
+			"title": "巡检照片",
+			"description": "巡检照片"
 		},
-		
 		"polling_date": {
-				"bsonType": "string",
-				"title": "巡检日期",
-				"description": "巡检日期",
-				"trim": "both"
-				
+			"bsonType": "string",
+			"title": "巡检日期",
+			"description": "巡检日期",
+			"trim": "both"
 		},
 		"polling_date_timestamp": {
-				"bsonType": "timestamp",
-				"title": "巡检日期",
-				"description": "巡检日期",
-				"trim": "both"
-				
+			"bsonType": "timestamp",
+			"title": "巡检日期",
+			"description": "巡检日期",
+			"trim": "both"
 		},
 		"polling_enginner": {
-				"bsonType": "string",
-				"title": "巡检工程师",
-				"description": "巡检工程师",
-				"trim": "both"
-				
+			"bsonType": "string",
+			"title": "巡检工程师",
+			"description": "巡检工程师",
+			"trim": "both"
 		},
-		"abnormal_detail":{
+		"abnormal_detail": {
 			"bsonType": "string",
 			"title": "异常详情",
 			"description": "异常详情",
 			"trim": "both"
 		}
-			
-				
-			
-		
 	}
 }

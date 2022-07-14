@@ -64,9 +64,9 @@
 				equipmentInfo:[],
 				showControl:{
 					equipmentPolling:false,
-					equipmentInfo:false,
+					equipmentInfo:true,
 					addEquipment:false,
-					equipmentMaintain:true
+					equipmentMaintain:false
 				},
 				//百度地址解析相关  保存经度纬度
 				
@@ -147,7 +147,7 @@
 				this.showControl[type]=false
 				this.showControl.equipmentInfo = true
 			},
-			//维护也点击返回
+			//维护页点击返回
 	
 			maintainBackClick(type){
 				console.log("维护返回")
@@ -155,14 +155,84 @@
 				this.showControl.equipmentInfo = true
 			},
 			//监听维护页面提交按钮点击
-			maintainSubmit(){
-					
+			maintainSubmit(type){
+					console.log('维护提交')
+					this.showControl[type]=false
+					this.showControl.equipmentInfo = true
 			},
 			//维护按钮点击
 			maintainClick(){
 				console.log("点击维护")
-				this.showControl.equipmentMaintain = true
-				this.showControl.equipmentInfo = false
+				//  创建百度地图接口对象
+				const bmap = new BMap.BMapWX(
+				{
+					ak:'AGsjlUHa5H8WBdN9QWQ1fOwfhSoq0GFf'
+				}
+				)
+				// 获取当前实时定位
+				uni.getLocation({
+					type:"gcj02",
+					altitude:true,
+					success: (res) => {
+						console.log(res)
+						this.latitude = res.latitude
+						this.longitude = res.longitude
+						// 调用百度API逆解析地址
+								bmap.regeocoding({
+									location:this.latitude+','+this.longitude,
+									iconPath:"/static/img/map/marker_red.png",
+									iconTapPath:"/static/img/map/marker_yellow.png",
+									success:res=>{
+										 console.log("当前位置",res.originalData.result.formatted_address)
+										
+										
+									},
+									fail:err=>{
+										console.log(err)
+									}
+								})
+								
+							},
+							fail: (err) => {
+								console.log(err)
+							}
+						})
+						
+						console.log("当前位置坐标",this.latitude,this.longitude)
+						console.log("机房位置坐标",this.equipmentLatitude,this.equipmentLongitude)
+						//计算当前位置距离机房距离  如果超过locationRadius则无法进行巡检
+						this.distance = getGreatCircleDistance(this.latitude,this.longitude,this.equipmentLatitude,this.equipmentLongitude)
+						// qqmapsdk.calculateDistance({
+						// 	mode:'straight',
+						// 	from:{
+						// 		latitude:this.latitude,
+						// 		longitude:this.longitude
+						// 	},
+						// 	to:[{
+						// 		latitude:this.equipmentLatitude,
+						// 		longitude:this.equipmentLongitude
+						// 	}],
+						// 	success:res=>{
+						// 		console.log(res)
+						// 	},
+						// 	fail:err=>{
+						// 		console.log(err)
+						// 	}
+						// })
+						console.log("当前位置距离机房-百度api",this.distance,"米")
+						
+							
+						if(this.distance > LOCATION_RADIUS){
+							uni.showToast({
+								title:"当前不在巡检距离范围内",
+								icon:"none",
+								duration:1000
+							})
+						}else{
+							this.showControl.equipmentMaintain = true
+							this.showControl.equipmentInfo = false
+						}
+				
 				
 			},
 			//巡检按钮点击

@@ -19,118 +19,92 @@
 		},
 		"target_title_year": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"target_title_info": {
 			"bsonType": "string",
-		
 			"trim": "both"
 		},
 		"target_title_company": {
 			"bsonType": "string",
-		
 			"trim": "both"
 		},
 		"target_main_title_sequence": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"target_main_title_info": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
-		
 		"target_info": {
 			"bsonType": "object",
 			"title": "指标数据",
 			"description": "指标数据"
-			
 		},
-		
 		"services_main_title_sequence": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"services_main_title_info": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"services_ganther_info": {
 			"bsonType": "array",
 			"title": "服务支撑数据",
 			"description": "服务支撑数据"
-			
 		},
 		"services_charts_option": {
 			"bsonType": "object",
 			"title": "服务支撑柱状图数据",
 			"description": "服务支撑柱状图数据"
-			
 		},
-		
 		"maintenance_main_title_sequence": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"maintenance_main_title_info": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"flow_charts_option": {
 			"bsonType": "object",
 			"title": "流量图数据",
 			"description": "流量图数据"
-			
 		},
 		"fault_type_option": {
 			"bsonType": "object",
 			"title": "故障表数据",
 			"description": "故障表数据"
-			
 		},
 		"alarm_group_option": {
 			"bsonType": "object",
 			"title": "告警组报表数据",
 			"description": "告警组报表数据"
-			
 		},
 		"alarm_type_option": {
 			"bsonType": "object",
 			"title": "告警类型报表数据",
 			"description": "告警类型报表数据"
-			
 		},
 		"alarm_location_option": {
 			"bsonType": "object",
 			"title": "告警地点报表数据",
 			"description": "告警地点报表数据"
-			
 		},
-		
-		
 		"special_main_title_sequence": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"special_main_title_info": {
 			"bsonType": "string",
-			
 			"trim": "both"
 		},
 		"special_work_info": {
 			"bsonType": "array",
 			"title": "专项工作数据",
 			"description": "专项工作数据"
-			
 		}
-		
 	}
 }

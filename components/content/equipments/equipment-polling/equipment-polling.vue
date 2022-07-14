@@ -277,10 +277,12 @@
 				})
 				this.filePaths.forEach((filePath, indey) => {
 					console.log(filePath, indey)
+					let arr = filePath.split('/')
+					let fileName = arr[arr.length-1]
 					promiseList.push(
 						uniCloud.uploadFile({
 							filePath: filePath,
-							cloudPath: filePath,
+							cloudPath: fileName+'.jpg',
 						}).then(res => {
 							console.log(res)
 							uni.hideLoading()

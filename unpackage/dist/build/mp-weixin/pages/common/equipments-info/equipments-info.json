@@ -4,6 +4,7 @@
   "usingComponents": {
     "equipment-info": "/components/content/equipments/equipment-info/equipment-info",
     "equipment-polling": "/components/content/equipments/equipment-polling/equipment-polling",
-    "add-equipment": "/components/content/equipments/add-equipment/add-equipment"
+    "add-equipment": "/components/content/equipments/add-equipment/add-equipment",
+    "equipment-maintain": "/components/content/equipments/equipment-maintain/equipment-maintain"
   }
 }

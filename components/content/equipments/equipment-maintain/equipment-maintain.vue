@@ -11,7 +11,7 @@
 				</view>
 			</view>
 			<view class="maintain-details">
-				<textarea :value="maintainDetails" placeholder="请描述异常详情:" class="textarea" @blur="maintainDetailEnter" />
+				<textarea :value="maintainDetails" placeholder="请描述维护详情:" class="textarea" @blur="maintainDetailEnter" />
 			</view>
 		
 		<view class="operation">
@@ -43,8 +43,8 @@
 				index:0,
 				maintainDetails:"",
 				maintainResult:{
-					maintainType:"",
-					maintainDetails:""
+					maintain_type:"",
+					maintain_details:""
 				}
 					
 			
@@ -57,21 +57,36 @@
 			},
 			maintainCommit(){
 				console.log(this.maintainResult)
+					//获取设备序列号
+					const info = uni.getStorageSync('equipmentsInfo')
 					
+					this.maintainResult.serial_number=info.serial_number
+					console.log('maintainresult',this.maintainResult)
 				addMaintainResult(this.maintainResult).then(res=>{
 					console.log(res)
-				})
+					uni.showToast({
+						title: '提交成功',
+						duration:1000
+					});
+					this.$emit('maintainSubmit','equipmentMaintain')
+									}).catch(err=>{
+										console.log('err',err)
+										uni.showToast({
+											title: '提交失败',
+											duration:1000
+										});
+									})
 			},
 			//选择维护类型
 			bindPickerChange(e	){
 				console.log(e)
-				this.maintainResult.maintainType = this.maintainType[e.detail.value].type
+				this.maintainResult.maintain_type = this.maintainType[e.detail.value].type
 				
 			},
 			//输入维护详情
 			maintainDetailEnter(e){
 				console.log(e)
-				this.maintainResult.maintainDetails = e.detail.value
+				this.maintainResult.maintain_details = e.detail.value
 			}
 		}
 	}

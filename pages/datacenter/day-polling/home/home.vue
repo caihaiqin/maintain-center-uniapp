@@ -376,10 +376,14 @@
 					
 					this.filePaths.forEach((filePath,indey)=>{
 						console.log(filePath,indey)
+						//截取filePath http://tmp/EwCXYOfwZFkrc37490ad7fe68b71f9f08afa41356540 /后面的文件名
+						let arr = filePath.split('/')
+						let fileName = arr[arr.length-1]
 						promiseList.push(
 							uniCloud.uploadFile({
+									
 									        filePath: filePath,
-									        cloudPath:filePath+'.jpg',
+									        cloudPath: fileName+'.jpg',
 									            }).then(res=>{
 																console.log(res)
 																uni.hideLoading()

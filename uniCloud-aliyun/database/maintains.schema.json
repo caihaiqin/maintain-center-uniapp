@@ -3,10 +3,10 @@
 	"bsonType": "object",
 	"required": [],
 	"permission": {
-		"read": false,
-		"create": false,
-		"update": false,
-		"delete": false
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
 	},
 	"properties": {
 		"_id": {
@@ -18,7 +18,7 @@
 			"description": "序列号",
 			"trim": "both"
 		},
-		"department": {
+		"maintain_type": {
 			"bsonType": "string",
 			"title": "部门",
 			"description": "设备所属部门",

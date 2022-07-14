@@ -37,7 +37,7 @@
 		},
 		"address": {
 			"bsonType": "string",
-			"title":"机房地址",
+			"title": "机房地址",
 			"description": "机房地址",
 			"trim": "both"
 		},
@@ -120,13 +120,13 @@
 			"trim": "both"
 		},
 		"totality": {
-				"bsonType": "string",
-				"title": "总体状态",
-				"description": "总体状态",
-				"trim": "both",
-				"defaultValue": "正常"
+			"bsonType": "string",
+			"title": "总体状态",
+			"description": "总体状态",
+			"trim": "both",
+			"defaultValue": "正常"
 		},
-		"abnormal_detail":{
+		"abnormal_detail": {
 			"bsonType": "string",
 			"title": "异常详情",
 			"description": "异常详情",
